@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: #f5f5dc;
+    /* bege claro */
+    position: relative;
+    overflow: hidden;
+}
+
+video#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 20vh;
+}
+
+.name {
+    font-size: 4em;
+    color: #f5f5dc;
+    /* bege claro */
+    text-shadow: 2px 2px 4px #000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+    font-size: 2em;
+    color: #f5f5dc;
+    /* bege claro */
+    text-shadow: 1px 1px 2px #000;
+    margin-top: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.footer-text {
+    font-size: 1.5em;
+    color: #f5f5dc;
+    /* bege claro */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #f5f5dc;
+    /* bege claro */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #dcdcdc;
+    /* bege mais claro ao passar o mouse */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
